@@ -8,16 +8,15 @@ const CardComponent = (props) => {
         {props.products.map((product) => (
           <Card
             className="max-w-sm"
-            imgSrc="https://www.apple.com/newsroom/images/product/watch/standard/Apple-Watch-SE-8up-hero-220907_big.jpg.large.jpg"
+            imgSrc={product.image}
             horizontal
             key={product.id} //for loop data from array
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {product.name}
+              {product.title}
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+              {product.title}
             </p>
             <RatingProduct />
           </Card>
