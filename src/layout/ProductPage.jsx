@@ -16,8 +16,8 @@ const ProductPage = () => {
   }, []);
   return (
     <>
-      <div className="container mx-auto">
-        <h1 className="text-5xl my-5 ">Product Section</h1>
+      <div className="container mx-auto h-screen flex flex-col justify-center items-center text-gray-500">
+        <h1 className="my-5 text-4xl font-bold mb-10">Product Section</h1>
         <CardComponent products={products} />
       </div>
     </>

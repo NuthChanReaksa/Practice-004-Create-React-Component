@@ -3,11 +3,11 @@ import RatingProduct from "./RatingProduct";
 
 const CardComponent = (props) => {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto  ">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         {props.products.map((product) => (
           <Card
-            className="max-w-sm"
+            className="max-w-sm "
             imgSrc={product.image}
             horizontal
             key={product.id} //for loop data from array
